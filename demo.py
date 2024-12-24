@@ -1,9 +1,4 @@
-from USVisa.logger import logging
-from USVisa.exception import CustomeException
-import sys
+from USVisa.pipline.training_pipeline import TrainingPipeline
 
-try:
-   a = 2/0
-except Exception as e:
-    raise CustomeException(e,sys)
-    
+obj = TrainingPipeline()
+obj.run_pipeline()
