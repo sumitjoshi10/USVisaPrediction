@@ -57,3 +57,15 @@ class DataTransformationConfig:
                                                      PREPROCESSING_OBJECT_FILE_NAME)
     
     
+    
+@dataclass
+class ModelTrainerConfig:
+    '''
+    Class Name  :   ModelTrainerConfig
+    Description :   This class has all the filepath required for the Model Trainer
+    '''
+    model_trainer_dir: str = os.path.join(training_pipeline_config.artifact_dir,MODEL_TRAINER_DIR_NAME)
+    trained_model_file_path: str = os.path.join(model_trainer_dir,MODEL_TRAINER_TRAINER_MODEL_DIR,MODEL_FILE_NAME)
+    expected_accuracy: float = MODEL_TRAINER_EXPECTED_SCORE
+    model_config_file_path = MODEL_TRAINER_CONFIG_FILE_PATH
+    
