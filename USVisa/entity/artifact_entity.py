@@ -19,3 +19,12 @@ class DataValidationArtifact:
     message: str
     drift_report_file_path: str
     
+@dataclass
+class DataTransformationArtifact:
+    '''
+    Class Name  :   DataTransformationArtifact
+    Description :   This class has all the filepath of the output of the Data Transformation
+    '''
+    transformed_object_file_path:str 
+    transformed_train_file_path:str
+    transformed_test_file_path:str

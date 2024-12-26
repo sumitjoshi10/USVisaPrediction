@@ -23,8 +23,10 @@ MODEL_FILE_NAME = "model.pkl"
 
 TARGET_COLUMN = "case_status"
 CURRENT_YEAR = date.today().year
-PREPROCESSING_OBJECT_FILE_NAME = "preprocessor.pkl"
+
 SCHEMA_FILE_PATH = os.path.join("config","schema.yaml")
+
+PREPROCESSING_OBJECT_FILE_NAME = "preprocessor.pkl"
 
 '''
 Data Ingestion related constant start with DATA_INGESTION VAR NAME
@@ -41,3 +43,10 @@ Data Validation related constant start with DATA_VALIDATION VAR NAME
 DATA_VALIDAION_DIR_NAME: str = "data_validation"
 DATA_VALIDATION_DRIFT_REPORT_DIR: str = "drift_report"
 DATA_VALIDATION_DRIFT_REPORT_FILE_NAME: str = "report.yaml"
+
+'''
+Data Transformation related constant start with DATA_TRANSFORMATION VAR NAME
+'''
+DATA_TRANSFORMATION_DIR_NAME: str = "data_transformation"
+DATA_TRANSFORMATION_TRANSFORMED_DATA_DIR: str = "transformed"
+DATA_TRANSFORMATION_TRANSFORMED_OBJECT_DIR: str = "tranformed_object"
