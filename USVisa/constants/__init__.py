@@ -28,6 +28,10 @@ SCHEMA_FILE_PATH = os.path.join("config","schema.yaml")
 
 PREPROCESSING_OBJECT_FILE_NAME = "preprocessor.pkl"
 
+AWS_ACCESS_KEY_ID_ENV_KEY = "AWS_ACCESS_KEY_ID"
+AWS_SECRET_ACCESS_KEY_ENV_KEY = "AWS_SECRET_ACCESS_KEY"
+REGION_NAME = "us-east-1"
+
 '''
 Data Ingestion related constant start with DATA_INGESTION VAR NAME
 '''
@@ -58,3 +62,10 @@ MODEL_TRAINER_DIR_NAME: str = "model_trainer"
 MODEL_TRAINER_TRAINER_MODEL_DIR: str = "trained_model"
 MODEL_TRAINER_EXPECTED_SCORE: float = 0.6
 MODEL_TRAINER_CONFIG_FILE_PATH: str = os.path.join("config","model.yaml")
+
+"""
+MODEL EVALUATION related constant 
+"""
+MODEL_EVALUATION_CHANGED_THRESHOLD_SCORE: float = 0.07
+MODEL_BUCKET_NAME = "usvisa-model2024"
+MODEL_PUSHER_S3_KEY = "model-registry"
